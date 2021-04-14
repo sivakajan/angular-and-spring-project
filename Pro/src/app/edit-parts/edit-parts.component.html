@@ -1,0 +1,22 @@
+<h1>Edit the details</h1>
+
+<form (ngSubmit)="onsubmits()">
+    <div class="mb-3">
+      <label for="exampleInputEmail1" class="form-label">shelve number</label>
+      <input type="email" class="form-control" id="shelve_number" name="productIdFromRoute" [(ngModel)]="part.shelve_number">
+     
+    </div>
+    <div class="mb-3">
+      <label for="exampleInputPassword1" class="form-label">name</label>
+      <input type="text" class="form-control" id="name" name="partsname" [(ngModel)]="part.name">
+    </div>
+
+    <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Price</label>
+        <input type="text" class="form-control" name="partsPrice" [(ngModel)]="part.price" id="price">
+      </div>
+    
+    <button type="submit" class="btn btn-primary">Edit</button>
+  </form>
+
+ 
